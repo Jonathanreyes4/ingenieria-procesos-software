@@ -42,7 +42,7 @@ def verify_google_token(token):
         )
 
         # Validar dominio Workspace
-        if idinfo.get("hd") != ALLOWED_DOMAIN:
+        if idinfo.get("email") != ALLOWED_EMAIL:
             return None
 
         return idinfo
